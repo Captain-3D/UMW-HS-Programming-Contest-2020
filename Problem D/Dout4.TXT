@@ -1,0 +1,3 @@
+Heaviest backpack: 99571.4
+Lightest backpack: 344
+Average weight of all backpacks: 52382

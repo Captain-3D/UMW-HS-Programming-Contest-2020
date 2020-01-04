@@ -1,0 +1,3 @@
+Heaviest backpack: 10
+Lightest backpack: 10
+Average weight of all backpacks: 10
