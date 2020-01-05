@@ -1,0 +1,3 @@
+Go Left 10 feet.
+Go Left 10 feet.
+Traversed the Minefield!

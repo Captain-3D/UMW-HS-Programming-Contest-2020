@@ -1,0 +1,6 @@
+Take a Right at the Large Tree
+After, take five steps forwards.
+How is the weather today?
+Turn ninety degrees towards the Right, and take thirteen steps.
+Turn Left and take 3 steps.
+Traversed the Minefield!
