@@ -1,9 +1,0 @@
-8
-Turn east
-Walk 4 paces
-Turn west
-Walk 7 paces
-Turn north
-Walk 5 paces
-Turn east
-Walk 3 paces
