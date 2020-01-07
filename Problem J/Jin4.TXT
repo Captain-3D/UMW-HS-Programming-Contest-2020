@@ -1,0 +1,3 @@
+2
+Turn east
+Walk 742 paces
