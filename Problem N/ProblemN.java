@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 /**
- * The eleventh problem in the HS programming constest official solution code.
+ * The fourtenth problem in the HS programming constest official solution code.
  *
  * @author Dalton Chichester
  * @version 1.0.0
@@ -17,7 +17,7 @@ public class ProblemN
         double rateOfCooling;
         int temp;
         double newtonTime;
-        double currentTemp;
+        int currentTemp;
         int hours;
         int minutes;
         int guestsListCounter = 0;
@@ -49,7 +49,11 @@ public class ProblemN
         {
             currentTemp = 40;
 
-            if(guestPreferedTemps.get(i) > weddingDayTemp || guestPreferedTemps.get(i) < 40)
+            if(guestPreferedTemps.get(i) < weddingDayTemp)
+            {
+                unhappyGuestList.add(guestNames.get(i));
+            }
+            else if(guestPreferedTemps.get(i) > currentTemp)
             {
                 unhappyGuestList.add(guestNames.get(i));
             }
@@ -86,18 +90,11 @@ public class ProblemN
                     }
 
                 }
-
-                if(gotTemp)
-                {
-                    guestFinal[guestsListCounter][0] = guestNames.get(i);
-                    guestFinal[guestsListCounter][1] = String.valueOf(minutes + (hours * 60));
-                    guestFinal[guestsListCounter][2] = "unsorted"; 
-                    guestsListCounter++;
-                }
-                else
-                {
-                    unhappyGuestList.add(guestNames.get(i));
-                }
+              
+                guestFinal[guestsListCounter][0] = guestNames.get(i);
+                guestFinal[guestsListCounter][1] = String.valueOf(minutes + (hours * 60));
+                guestFinal[guestsListCounter][2] = "unsorted"; 
+                guestsListCounter++;
             }
         }
 
@@ -108,7 +105,7 @@ public class ProblemN
 
             for(int j = 0; j < guestsListCounter; j++)
             {
-                if(Integer.parseInt(guestFinal[j][1]) > longest && guestFinal[j][2] == "sorted")
+                if(Integer.parseInt(guestFinal[j][1]) > longest && guestFinal[j][2] == "unsorted")
                 {
                     longest = Integer.parseInt(guestFinal[j][1]);
                     indext = j;
@@ -117,20 +114,22 @@ public class ProblemN
 
             if(Integer.parseInt(guestFinal[indext][1]) == 0)
             {
-                System.out.println("remove bottle from fridge at the time of the wedding.");
+                System.out.println(guestFinal[indext][0] + ": Remove bottle from fridge at the time of the wedding.");
+                guestFinal[indext][2] = "sorted";
             }
             else
             {
                 int h = (Integer.parseInt(guestFinal[indext][1]) / 60);
                 int m = (Integer.parseInt(guestFinal[indext][1]) % 60);
-                System.out.println(guestFinal[indext][0] + ": remove bottle from fridge " + h + " hours and " + m + " minutes before the wedding.");
+                System.out.println(guestFinal[indext][0] + ": Remove bottle from fridge " + h + " hours and " + m + " minutes before the wedding.");
                 guestFinal[indext][2] = "sorted"; 
             }
         }
 
+        //System.out.println(unhappyGuestList.size());
         for(int i = 0; i < unhappyGuestList.size(); i++)
         {
-            System.out.println(unhappyGuestList.get(i) + ": unable to get the right temperature.");
+            System.out.println(unhappyGuestList.get(i) + ": Unable to get the right temperature.");
         }
 
     }
