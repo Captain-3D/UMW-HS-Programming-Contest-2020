@@ -2,7 +2,7 @@ import java.io.*;
 import java.util.*;
 
 /**
- * The eleventh problem in the HS programming constest official solution code.
+ * The thirtenth problem in the HS programming constest official solution code.
  *
  * @author Dalton Chichester
  * @version 1.0.0
