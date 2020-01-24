@@ -22,20 +22,16 @@ public class ProblemM
         double fee;
     	Scanner scnr = new Scanner(System.in);
 
-    	System.out.print("Please input the password algorithm: ");
 		passwordAlgorithm = scnr.nextInt();
         scnr.nextLine();
 
-        System.out.print("Please input the password: ");
         password = scnr.nextLine();
 
-        System.out.print("Please input the amount you would like to withdraw: ");
         String withdrawalAmountTemp = scnr.nextLine();
         withdrawalAmountTemp = withdrawalAmountTemp.replace("$", "");
         withdrawalAmountTemp = withdrawalAmountTemp.replace(",", "");
         withdrawalAmount = Double.parseDouble(withdrawalAmountTemp);
 
-        System.out.print("Please input the fee: ");
         fee = scnr.nextDouble();
         scnr.nextLine();
 

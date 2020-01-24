@@ -19,16 +19,13 @@ public class ProblemF
     	double predictedMiles;
     	Scanner scnr = new Scanner(System.in);
 
-        System.out.print("Please input the number of miles Jaffy plans to drives: ");
         miles = scnr.nextDouble();
         scnr.nextLine();
 
-        System.out.print("Please input the miles per gallon that Jaffy’s convertible gets: ");
         mpg = scnr.nextDouble();
         gasUsed = miles / mpg; 
         scnr.nextLine();
         
-        System.out.print("Please input the number of gallons of gas Jaffy’s tank holds: ");
         gasTank = scnr.nextDouble();
         finalGasTank = gasTank - gasUsed;
         predictedMiles = finalGasTank * mpg;
@@ -41,7 +38,6 @@ public class ProblemF
         
         scnr.nextLine();
         
-        System.out.print("Please input the current price of a gallon of gas: ");
         double price = scnr.nextDouble();
         double cost = price * gasUsed;
         scnr.nextLine();

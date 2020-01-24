@@ -17,7 +17,6 @@ public class ProblemI
     	String[] decryptedMessages;
     	Scanner scnr = new Scanner(System.in);
 
-    	System.out.print("Please input the number of pairs of lines: ");
 		pairs = scnr.nextInt();
         scnr.nextLine();
 
@@ -26,10 +25,8 @@ public class ProblemI
 
         for(int i = 0; i < pairs; i++)
         {
-        	System.out.print("Please input the key of pair " + (i+1) + ": ");
 			keyAndMessage[i][0] = scnr.nextLine();
 
-        	System.out.print("Please input the encrypted message of pair " + (i+1) + ": ");
 			keyAndMessage[i][1] = scnr.nextLine();
         }
         for(int i = 0; i < pairs; i++)

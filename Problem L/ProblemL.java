@@ -17,15 +17,12 @@ public class ProblemL
         int rooms;
     	Scanner scnr = new Scanner(System.in);
 
-    	System.out.print("Please input the gallons of water in Jaffys tank: ");
 		tankOfWater = scnr.nextInt();
         scnr.nextLine();
 
-        System.out.print("Please input the number of floors: ");
         floors = scnr.nextInt();
         scnr.nextLine();
 
-        System.out.print("Please input the number of rooms on each floor: ");
         rooms = scnr.nextInt();
         scnr.nextLine();
 
@@ -33,7 +30,6 @@ public class ProblemL
 
         for(int i = 0; i < floors; i++)
         {
-            System.out.print("Please input the room layout of floor " + (i+1) + ": ");
             building[i] = scnr.nextLine().split("\\s");;
         }
 

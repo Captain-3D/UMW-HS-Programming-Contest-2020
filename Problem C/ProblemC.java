@@ -17,8 +17,7 @@ public class ProblemC
         double jessiesNewHeight;
 		double jessiesNewHeightInches;
     	Scanner scnr = new Scanner(System.in);
-
-		System.out.print("Please input how many FaceTime Calls there has been: ");
+        
         facetimeCalls = scnr.nextInt();
         scnr.nextLine();
 

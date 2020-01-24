@@ -18,7 +18,6 @@ public class ProblemE
     	String tempOperand;
         Scanner scnr = new Scanner(System.in);
 
-        System.out.print("Please input how many lines there are: ");
         numLines = scnr.nextInt();
         scnr.nextLine();
 
@@ -26,7 +25,6 @@ public class ProblemE
         
         for(int i = 0; i < numLines; ++i)
         {
-        	System.out.print("Please input line " + (i+1) + ": ");
             lines[i] = scnr.nextLine();
         }  
         

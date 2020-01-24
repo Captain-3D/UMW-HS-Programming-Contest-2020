@@ -17,13 +17,11 @@ public class ProblemG
     	String tempLine;
     	Scanner scnr = new Scanner(System.in);
 
-    	System.out.print("Please input the degrees Jaffy wants to rotate the picture: ");
 		degrees = scnr.nextInt();
         scnr.nextLine();
 
         for(int i = 0; i < 10; i++)
         {
-        	System.out.print("Please input line " + (i+1) + " of the picture: ");
 			tempLine = scnr.nextLine();
 
             picture[i] = tempLine.split("\\s");

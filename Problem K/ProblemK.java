@@ -19,7 +19,6 @@ public class ProblemK
         double seconds;
     	Scanner scnr = new Scanner(System.in);
 
-    	System.out.print("Please input the number of pairs of lines: ");
 		pairs = scnr.nextInt();
         scnr.nextLine();
 
@@ -28,11 +27,9 @@ public class ProblemK
 
         for(int i = 0; i < pairs; i++)
         {
-        	System.out.print("Please input the mph of pair " + (i+1) + ": ");
 			mphs[i] = scnr.nextDouble();
         	scnr.nextLine();
 
-        	System.out.print("Please input the distance of pair " + (i+1) + ": ");
 			distances[i] = scnr.nextDouble();
         	scnr.nextLine();
         }

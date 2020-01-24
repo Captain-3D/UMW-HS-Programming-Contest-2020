@@ -19,7 +19,6 @@ public class ProblemD
         double averageBackpackWeight;
     	Scanner scnr = new Scanner(System.in);
 
-		System.out.print("Please input how many backpacks Jaffy weighed: ");
         numBackpacks = scnr.nextInt();
         scnr.nextLine();
 
@@ -28,7 +27,6 @@ public class ProblemD
         for(int i = 0; i < numBackpacks; i++)
         {
         	int backpackCounter = i+1;
-        	System.out.print("Please input the weight of backpack " + backpackCounter + ": ");
         	backpackWeights[i] = scnr.nextDouble();
         	scnr.nextLine();
         }

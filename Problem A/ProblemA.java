@@ -16,12 +16,10 @@ public class ProblemA
     	int jaqaruesAge;
     	Scanner scnr = new Scanner(System.in);
 
-		System.out.print("Please input Jaffys age: ");
         jaffysAge = scnr.nextInt();
         scnr.nextLine();
 
         jaqaruesAge = jaffysAge + ageDifference;
-
         System.out.println("Uncle Jaqarue is " + jaqaruesAge + " years old.");
     }
 }

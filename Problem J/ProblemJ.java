@@ -18,13 +18,11 @@ public class ProblemJ
     	String[] line;
     	Scanner scnr = new Scanner(System.in);
 
-    	System.out.print("Please input the number of lines: ");
 		numLines = scnr.nextInt();
         scnr.nextLine();
 
         for(int i = 0; i < numLines; i++)
         {
-        	System.out.print("Please input the number of lines: ");
 			line = scnr.nextLine().split("\\s");
 
 			if(line[0].equals("Walk"))
