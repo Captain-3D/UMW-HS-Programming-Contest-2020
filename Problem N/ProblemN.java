@@ -17,7 +17,7 @@ public class ProblemN
         double rateOfCooling;
         int temp;
         double newtonTime;
-        int currentTemp;
+        double currentTemp;
         int hours;
         int minutes;
         int guestsListCounter = 0;
@@ -49,25 +49,16 @@ public class ProblemN
         {
             currentTemp = 40;
 
-            if(guestPreferedTemps.get(i) < weddingDayTemp)
+            System.out.println(guestPreferedTemps.get(i));
+
+            if(guestPreferedTemps.get(i) <= weddingDayTemp && guestPreferedTemps.get(i) >= currentTemp)
             {
-                unhappyGuestList.add(guestNames.get(i));
-            }
-            else if(guestPreferedTemps.get(i) > currentTemp)
-            {
-                unhappyGuestList.add(guestNames.get(i));
-            }
-            else
-            {
+                System.out.println("in If Loop");
                 boolean gotTemp = false;
 
                 if(40 == guestPreferedTemps.get(i))
                 {
-                    guestFinal[guestsListCounter][0] = guestNames.get(i);
-                    guestFinal[guestsListCounter][1] = "0";
-                    guestFinal[guestsListCounter][2] = "unsorted";
-                    guestsListCounter++;
-                    break;
+                    gotTemp = true;
                 }
 
                 hours = 0;
@@ -75,6 +66,7 @@ public class ProblemN
 
                 while(!gotTemp)
                 {
+                    System.out.println("in while Loop, Current temp = " + currentTemp);
                     currentTemp += .5;
                     minutes++;
                     if(minutes == 60)
@@ -88,13 +80,20 @@ public class ProblemN
                         gotTemp = true;
                         break;
                     }
-
                 }
               
-                guestFinal[guestsListCounter][0] = guestNames.get(i);
-                guestFinal[guestsListCounter][1] = String.valueOf(minutes + (hours * 60));
-                guestFinal[guestsListCounter][2] = "unsorted"; 
-                guestsListCounter++;
+                if(gotTemp)
+                {
+                    guestFinal[guestsListCounter][0] = guestNames.get(i);
+                    guestFinal[guestsListCounter][1] = String.valueOf(minutes + (hours * 60));
+                    guestFinal[guestsListCounter][2] = "unsorted"; 
+                    guestsListCounter++;
+                }
+            }
+            else
+            {
+                System.out.println("in Else Loop");
+                unhappyGuestList.add(guestNames.get(i));
             }
         }
 
