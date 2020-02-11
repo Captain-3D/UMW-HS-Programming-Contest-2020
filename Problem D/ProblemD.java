@@ -52,30 +52,8 @@ public class ProblemD
 
         averageBackpackWeight = sumOfBackpackWeights / numBackpacks;
 
-        if(heaviestBackpack % 1 > .90)
-        {
-        	System.out.printf("Heaviest backpack: %.0f\n", heaviestBackpack);
-        }
-        else
-        {
-        	System.out.printf("Heaviest backpack: %.1f\n", heaviestBackpack);
-        }
-        if(lightestBackpack % 1 > .90)
-        {
-        	System.out.printf("Lightest backpack: %.0f\n", lightestBackpack);
-        }
-        else
-        {
-        	System.out.printf("Lightest backpack: %.1f\n", lightestBackpack);
-        }
-        if(averageBackpackWeight % 1 > .90)
-        {
-        	System.out.printf("Average weight of all backpacks: %.0f\n", averageBackpackWeight);
-        }
-        else
-        {
-        	System.out.printf("Average weight of all backpacks: %.1f\n", averageBackpackWeight);
-        }
-        
+        System.out.printf("Heaviest backpack: %.1f\n", heaviestBackpack);
+        System.out.printf("Lightest backpack: %.1f\n", lightestBackpack);
+        System.out.printf("Average weight of all backpacks: %.1f\n", averageBackpackWeight);
     }
 }
