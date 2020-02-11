@@ -53,7 +53,6 @@ public class ProblemN
 
             if(guestPreferedTemps.get(i) <= weddingDayTemp && guestPreferedTemps.get(i) >= currentTemp)
             {
-                System.out.println("in If Loop");
                 boolean gotTemp = false;
 
                 if(40 == guestPreferedTemps.get(i))
@@ -66,7 +65,6 @@ public class ProblemN
 
                 while(!gotTemp)
                 {
-                    System.out.println("in while Loop, Current temp = " + currentTemp);
                     currentTemp += .5;
                     minutes++;
                     if(minutes == 60)
@@ -92,7 +90,6 @@ public class ProblemN
             }
             else
             {
-                System.out.println("in Else Loop");
                 unhappyGuestList.add(guestNames.get(i));
             }
         }
@@ -120,17 +117,33 @@ public class ProblemN
             {
                 int h = (Integer.parseInt(guestFinal[indext][1]) / 60);
                 int m = (Integer.parseInt(guestFinal[indext][1]) % 60);
-                System.out.println(guestFinal[indext][0] + ": Remove bottle from fridge " + h + " hours and " + m + " minutes before the wedding.");
+
+                System.out.print(guestFinal[indext][0] + ": Remove bottle from fridge ");
+                if(h == 1)
+                {
+                    System.out.print(h + " hour and ");
+                }
+                else
+                {
+                    System.out.print(h + " hours and ");
+                }
+
+                if(m == 1)
+                {
+                    System.out.println(m + " minute before the wedding.");
+                }
+                else
+                {
+                    System.out.println(m + " minutes before the wedding.");
+                }
                 guestFinal[indext][2] = "sorted"; 
             }
         }
 
-        //System.out.println(unhappyGuestList.size());
         for(int i = 0; i < unhappyGuestList.size(); i++)
         {
             System.out.println(unhappyGuestList.get(i) + ": Unable to get the right temperature.");
         }
-
     }
 }
 
