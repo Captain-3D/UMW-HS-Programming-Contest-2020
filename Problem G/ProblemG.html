@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>
+Jaffy fixes Janny's Photos
+</title>
+</head>
+<body>
+<h1>
+Problem G - Jaffy fixes Janny's Photos
+</h1>
+<h3>
+Description
+</h3>
+<p>
+Jaffy is feeling sad because he has not seen his beloved Janny in over a year. His only comforts are some digital photos of Janny. Unfortunately, the photos are oriented incorrectly. Jaffy must rotate the photo counterclockwise so he can gaze upon Janny's beauty. Each photo has a specific degree for rotation - for example 90 degrees and 180 degrees. Janny has an inexpensive camera with a resolution of 10 x 10. Each photo is a 10 x 10 grid of symbols with a space in between each symbol. Even though the photos do not look like much to you, they bring great joy to Jaffy.
+</p>
+<h3>
+Input
+</h3>
+<p>
+The first line contains a non-negative integer N giving the number of degrees of counterclockwise rotation. The value on this line will be evenly divisible by 90. For example, 0, 90, 180, 270, and 360.
+The next 10 lines are the photo. Each line contains 10 characters separated by a space.
+</p>
+<h3>
+Output
+</h3>
+<p>
+10 lines each containing 10 characters separated by a space that is a counterclockwise rotation of the input. The degrees of rotation are on the first line of the input.
+<h3>
+Sample Input
+</h3>
+<pre>
+90
+# # # # # $ # # # # 
+# # # # $ # $ # # # 
+# # # $ # $ # $ # # 
+# # # # $ # $ # # # 
+# # # # # $ # # # # 
+# # # # # $ # # # # 
+# # # # $ # $ # # # 
+# # # # $ # $ # # # 
+# # $ $ $ $ $ $ $ #
+# # # # # # # # # #
+</pre>
+<h3>
+Sample Output
+</h3>
+<pre>
+# # # # # # # # # # 
+# # # # # # # # $ # 
+# # $ # # # # # $ # 
+# $ # $ # # $ $ $ # 
+$ # $ # $ $ # # $ # 
+# $ # $ # # $ $ $ # 
+# # $ # # # # # $ # 
+# # # # # # # # $ # 
+# # # # # # # # # #
+# # # # # # # # # #
+</pre>

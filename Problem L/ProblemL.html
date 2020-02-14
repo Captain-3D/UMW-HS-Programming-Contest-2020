@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>
+Jaffy the Fireman
+</title>
+</head>
+<body>
+<h1>
+Problem L - Jaffy the Fireman
+</h1>
+<h3>
+Description
+</h3>
+<p>
+Jaffy is beginning to realize he needs to balance his social, study, and service time. Jaffy decides to become a volunteer fireman for the local Fredericksburg Fire Department. The Fire Department is excited to have Jaffy because he will be helpful reaching taller structures. After fire fighting training, Jaffy is ready to serve as a volunteer. On his first night as a volunteer, he has to put out fires in various rooms of a tall structure. Help Jaffy put out the fires.
+</p>
+<h3>
+Input
+</h3>
+<p>
+The first line of input contains a non-negative integer W that is the number of gallons of water in a tanker Jaffy has to extinguish the various fires.
+The second line of input contains a non-negative integer N giving the number of floors in the building.
+The third line of input contains a non-negative integer M giving the number of rooms on each floor.
+Following that are N lines. Each line has M non-negative integers separated by a space. Each line represents a floor in the building. The floor number is 1 to N, where floor N is the first line read. Each non-negative integer is the number of gallons of water required to extinguish the fire in that room. A zero indicates there is no fire in that room. The room number is 1 to M, where room M is the last number on a floor line. Each room is identified by two numbers - floor and room.
+</p>
+<h3>
+Output
+</h3>
+<p>
+Output is one line for each room fire extinguished, along with a summary statement. Extinguishing a fire consumes water from Jaffy's tanker. Room fires must be extinguished in the following order
+<br>
+<li>
+Floor 1, room 1; floor 1, room 2, ..., floor 1 room M
+</li>
+<li>
+Floor 2, room 1; floor 2, room 2, ..., floor 2 room M
+</li>
+<li>
+...
+</li>
+<li>
+Floor N, room 1; floor N, room 2, ..., floor N, room M
+</li>
+<br>
+The summary statement is one of the following.
+<br>
+<pre>
+All room fires extinguished.
+The building is still burning!
+</pre>
+<h3>
+Sample Input 1
+</h3>
+<pre>
+10
+3
+3
+0 0 3
+2 0 2
+0 1 1
+</pre>
+<h3>
+Sample Output 1
+</h3>
+<pre>
+Room 2, Floor 1
+Room 3, Floor 1
+Room 1, Floor 2
+Room 3, Floor 2
+Room 3, Floor 3
+All room fires extinguished.
+</pre>
+<h3>
+Sample Input 2
+</h3>
+<pre>
+100
+2
+5
+0 0 0 0 2
+9 0 50 0 40
+</pre>
+<h3>
+Sample Output 1
+</h3>
+<pre>
+Room 1, Floor 1
+Room 3, Floor 1
+Room 5, Floor 1
+The building is still burning!
+</pre>

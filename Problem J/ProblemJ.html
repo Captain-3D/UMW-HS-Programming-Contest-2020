@@ -1,0 +1,71 @@
+<html>
+<head>
+<title>
+Aunt Gingersnap's Mother's Present
+</title>
+</head>
+<body>
+<h1>
+Problem J - Aunt Gingersnap's Mother's Present
+</h1>
+<h3>
+Description
+</h3>
+<p>
+Aunt Gingersnap's mother, Gingerale, was extremely grateful for Jiffy's help in decrypting the instructions. Gingerale decided to give Jiffy a grand present. She retreated to an old tree and returned with a dusty map, which had directions to a buried treasure. Her great-great-great grandfather Gingerbreadman, who lived in the 1700’s when there were 1,000,000 giraffes in Africa (today there are about 110,000), owned a solid gold giraffe sculpture. Gingerbreadman buried the sculpture and wrote directions on a piece of parchment. Gingerbreadman was one of the few literate giraffes of his time. The map has remained in the Ginger family ever since. Mother Gingerale gave the map to Aunt Gingersnap. You must help Aunt Gingersnap find the treasure.
+</p>
+<h3>
+Input
+</h3>
+<p>
+The first line contains a non-negative integer N giving the number of lines in directions.
+
+
+Following are N lines, each giving one direction. Each of these directions say either “Walk P paces”, where P is a positive integer; or “Turn DIR” where DIR is one of north, south, east, or west.
+</p>
+<h3>
+Output
+</h3>
+<p>
+Output consists of one line giving the final location of the treasure relative to the starting position. It must have the form "Treasure is Y paces to the [north/south] and X paces to the [east/west]."
+ 
+If either X or Y are zero, you must not print that part of the message (as in Sample Output 2). If both X and Y are 0, you should simply output "Treasure is right here."
+<h3>
+Sample Input 1
+</h3>
+<pre>
+7
+Walk 4 paces
+Turn east
+Walk 10 paces
+Turn south
+Walk 6 paces
+Turn east
+Walk 2 paces
+</pre>
+<h3>
+Sample Output 1
+</h3>
+<pre>
+Treasure is 2 paces to the south and 12 paces to the east.
+</pre>
+<h3>
+Sample Input 2
+</h3>
+<pre>
+8
+Turn east
+Walk 4 paces
+Turn west
+Walk 7 paces
+Turn north
+Walk 5 paces
+Turn east
+Walk 3 paces
+</pre>
+<h3>
+Sample Output 2
+</h3>
+<pre>
+Treasure is 5 paces to the north.
+</pre>

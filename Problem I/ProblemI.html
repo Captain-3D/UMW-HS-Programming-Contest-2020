@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>
+Helping Aunt Gingersnap
+</title>
+</head>
+<body>
+<h1>
+Problem I - Helping Aunt Gingersnap
+</h1>
+<h3>
+Description
+</h3>
+<p>
+Jiffy and Jaffy's Aunt Gingerbread has a sister named Gingersnap. Aunt Gingersnap has just finished a long journey from South Africa to south Niger, the home of Reticulated Giraffes. Aunt Gingerbread is visiting her mother. Unfortunately, Niger has various ongoing hostilities. One such hostility left several mines between Aunt Gingersnap's current location and her mother’s home. In front of Aunt Gingersnap is a deadly minefield where one wrong step can cause great bodily harm. Aunt Gingersnap has found encoded instructions that the warring party uses to safely traverse the minefield. The instructions are encoded using a Caesar cipher. A cipher is an algorithm that translates plain text to encrypted text and encrypted text to plain text. The Caesar cipher shifts letters to the right when encrypting and to the left when decrypting. For example, C is two characters to the right of A and M is four characters to the left of Q. The key on a Caesar cipher is an integer, which shifts letters. When encoding a string, the key shifts to the right. When decoding a string, the key shifts letter to the left. The plain text (unencoded) string DAD when encrypted with a key of 3 shifts each letter 3 positions to the right, resulting in the string GDG. Decrypting GDG with a key of 3 shifts each letter 3 position to the left, resulting in the plain text string DAD. The plain text string ZAC when encrypted with a key of 3 shifts each letter 3 positions to the right resulting in the encrypted string CDF. Decrypting CDF with a key of 3 shifts each letter 3 positions to the left, resulting in the string ZAC.
+The only person Aunt Gingersnap trusts to properly decrypt the instructions is her niece Jiffy, who is an outstanding computer science major at UMW. Aunt Gingersnap texts the encrypted instructions to Jiffy who runs a program to decrypt the instructions and texts the plain text back to Aunt Gingersnap.
+You are to write Jiffy's program to decrypt the instructions.
+</p>
+<h3>
+Input
+</h3>
+<p>
+The first line of input contains a non-negative integer N giving the number of pairs of lines. 
+Following that are 2*N lines. Each pair of lines contain a key and an encrypted message. The first line in the pair is positive non-negative integer, which is a key. The second line in the pair is an encrypted message. The encrypted message can contain upper case letters and other characters. The upper case letters are encrypted and must be decrypted. The other characters are not changed.
+</p>
+<h3>
+Output
+</h3>
+<p>
+Output is N+1 lines. The first N lines are the decrypted message. Line N+1 is Traversed the Minefield!, including the exclamation point.
+<h3>
+Sample Input
+</h3>
+<pre>
+2
+3
+Jr Ohiw 10 ihhw.
+4
+Ks Pijx 100 jiix.
+</pre>
+<h3>
+Sample Output
+</h3>
+<pre>
+Go Left 10 feet.
+Go Left 100 feet.
+Traversed the Minefield!
+</pre>
