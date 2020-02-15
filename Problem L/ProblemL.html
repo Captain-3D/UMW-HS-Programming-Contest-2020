@@ -27,7 +27,7 @@ Following that are N lines. Each line has M non-negative integers separated by a
 Output
 </h3>
 <p>
-Output is one line for each room fire extinguished, along with a summary statement. Extinguishing a fire consumes water from Jaffy's tanker. Room fires must be extinguished in the following order
+Output is one line for each room fire extinguished or partially extinguished, along with a summary statement. Extinguishing a fire consumes water from Jaffy's tanker. Room fires must be extinguished in the following order
 <br>
 <li>
 Floor 1, room 1; floor 1, room 2, ..., floor 1 room M
@@ -41,6 +41,11 @@ Floor 2, room 1; floor 2, room 2, ..., floor 2 room M
 <li>
 Floor N, room 1; floor N, room 2, ..., floor N, room M
 </li>
+<br>
+Each room extinguish line has the following format.
+<pre>
+Room X, Floor Y
+</pre>
 <br>
 The summary statement is one of the following.
 <br>

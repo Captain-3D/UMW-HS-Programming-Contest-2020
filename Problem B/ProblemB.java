@@ -18,7 +18,7 @@ public class ProblemB
     	Scanner scnr = new Scanner(System.in);
 
         pairs = scnr.nextInt();
-        scnr.nextLine();
+        //scnr.nextLine();
 
         giraffeTotals = new int[pairs];
 
@@ -29,7 +29,7 @@ public class ProblemB
             scnr.nextLine();
 
             giraffeB = scnr.nextInt();
-            scnr.nextLine();
+            //scnr.nextLine();
 
             giraffeTotals[i] = giraffeA + giraffeB;
         }

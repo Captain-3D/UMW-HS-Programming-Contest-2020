@@ -17,7 +17,7 @@ public class ProblemA
     	Scanner scnr = new Scanner(System.in);
 
         jaffysAge = scnr.nextInt();
-        scnr.nextLine();
+        //scnr.nextLine();
 
         jaqaruesAge = jaffysAge + ageDifference;
         System.out.println("Uncle Jaqarue is " + jaqaruesAge + " years old.");

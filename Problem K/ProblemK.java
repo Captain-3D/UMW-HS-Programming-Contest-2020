@@ -31,7 +31,7 @@ public class ProblemK
         	scnr.nextLine();
 
 			distances[i] = scnr.nextDouble();
-        	scnr.nextLine();
+        	//scnr.nextLine();
         }
 
         for(int i = 0; i < pairs; i++)

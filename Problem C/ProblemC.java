@@ -19,7 +19,7 @@ public class ProblemC
     	Scanner scnr = new Scanner(System.in);
         
         facetimeCalls = scnr.nextInt();
-        scnr.nextLine();
+        //scnr.nextLine();
 
         jessiesNewHeight = jessiesHeight + (rateOfGrowth * facetimeCalls);
         jessiesNewHeightInches = jessiesNewHeight % 1;

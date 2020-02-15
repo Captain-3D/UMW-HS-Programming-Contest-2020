@@ -28,7 +28,7 @@ public class ProblemD
         {
         	int backpackCounter = i+1;
         	backpackWeights[i] = scnr.nextDouble();
-        	scnr.nextLine();
+        	//scnr.nextLine();
         }
 
         heaviestBackpack = backpackWeights[0];

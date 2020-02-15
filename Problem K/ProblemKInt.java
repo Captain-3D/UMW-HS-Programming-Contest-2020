@@ -15,7 +15,6 @@ public class ProblemKInt {
             int miles = Integer.parseInt(in.nextLine());
             int hours = miles / mph;
             int min = ((miles % mph) * 60) / mph;
-            int minRem = ((miles % mph) * 60) % mph;
             int sec = ((miles % mph) * 60) % mph * 60  / mph;
             System.out.printf("Jaffy can bike the trail in %d hours, %d minutes, %d seconds.\n", hours, min, sec);
         }

@@ -34,13 +34,14 @@ public class ProblemF
         {
             gasUsed = gasTank;
             miles = gasTank * mpg;
+            predictedMiles = 0;
         }
         
         scnr.nextLine();
         
         double price = scnr.nextDouble();
         double cost = price * gasUsed;
-        scnr.nextLine();
+        //scnr.nextLine();
         
         System.out.printf("Jaffy drove for %.2f miles!\n", miles);
         System.out.printf("Jaffy used %.2f gallons of gas!\n", gasUsed);
