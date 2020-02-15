@@ -12,28 +12,30 @@ Problem N - Janny and Jaffy's Wedding
 Description
 </h3>
 <p>
-Not only is Janny enrolling at UMW, but Janny and Jaffy are getting married. When Janny received the ring you printed in Problem H, she and Jaffy decided to get married. Giraffes tend to marry early. Jeography is Jaffy's best man, and Jeography has flown to Fredericksburg to help Jaffy with wedding details. Jeography asks Jaffy if they will have sparkling grape juice at the wedding as it is a favourite beverage of giraffes. Giraffes are a bit quirky when it comes to drinking sparkling grape juice. Giraffes have unique taste buds when it comes to drinking sparkling grape juice. Each giraffe only likes to drink sparkling grape juice when it's at a certain temperature as any other temperature doesn't taste quite right. Each wedding guest has their own drinkable sparkling grape juice temperature.
-Since Jaffy and Janny want their wedding to be perfect, they will only serve sparkling grape juice at temperatures everyone will enjoy. To make sure everyone is satisfied, he makes sure each giraffe has their own bottle at the temperature they want. The fridge at the wedding has an internal temperature of 40 degrees Fahrenheit and Jaffy knows that every minute outside the fridge the grape juice will be 0.5 degrees warmer. Jaffy wants a list of the times he should pull his friend's grape juice bottles out ordered by how far from the wedding he should pull out the bottles.
+Not only is Janny enrolling at UMW, but Janny and Jaffy are getting married. When Janny received the ring you printed in Problem H, she and Jaffy decided to get married. Giraffes tend to marry early. Jeography is Jaffy's best man, and Jeography has flown to Fredericksburg to help Jaffy with wedding details. Jeography asks Jaffy if they will have sparkling grape juice at the wedding as it is a favourite beverage of giraffes. Giraffes are a bit quirky when it comes to drinking sparkling grape juice, and giraffes have unique taste buds when it comes to drinking sparkling grape juice. Each giraffe only likes to drink sparkling grape juice when it's at a certain temperature as any other temperature doesn’t taste quite right. Each wedding guest has their own drinkable sparkling grape juice temperature.
+</p>
+<p>
+Since Jaffy and Janny want their wedding to be perfect, they will only serve sparkling grape juice at temperatures everyone will enjoy. To make sure everyone is satisfied, they want to provide each giraffe their own bottle at their desired temperature. The refrigerator at the wedding has an internal temperature of 40 degrees F. All of the guests grape juice bottles are in the refrigerator and are exactly 40 degrees. Jaffy knows that every minute outside the refrigerator the grape juice will increase by 0.5 degrees, but the grape juice will not get warmer than the outside temperature. Jaffy wants a list of the times he should remove his friend's grape juice bottles ordered by the amount of time prior to the wedding the bottles should be removed. The guests whose bottles must be removed earlier will appear first in the list. If multiple guest's bottles must be removed at the same time, they must be ordered alphabetically by their names.
 </p>
 <h3>
 Input
 </h3>
 <br>
 <li>
-The first N lines define wedding guests and their desired temperature of sparkling grape juice. Each line contains two values. The name of the guest is a string without spaces. Following the name is a space. Following the space is a non-negative integer, which is the guest's desired temperature. each contain one integer representing the temperature desired by the guest and the string of the guest's name.
+The first N lines define wedding guests and their desired temperature of sparkling grape juice. Each line contains two values. The name of the guest is a sequence of letters without spaces. Following the name is a space. Following the space is a non-negative integer, which is the guest's desired temperature.
 </li>
 <li>
-The line after the guest's request contains a single period.
+The line following the guests’ request contains a single period.
 </li>
 <li>
-The next line is an integer being the temperature outside on the wedding day
+The next line is an integer, which is the temperature outside on the wedding day
 </li>
 <h3>
 Output
 </h3>
 <p>
-The output is the time, an integer for the hours and an integer for the minutes when the bottle should be pulled out for each guest that day of the wedding. If the guest wants a temperature we are unable to obtain, print out their name: and say " unable to get the right temperature."
-The output should be printed out in descending order by time away from the wedding followed by those that requested invalid temperatures.
+The output is a sequence of lines, one line for each guest in the input. The output first shows guests whose temperature can be achieved. They are ordered by the amount of time prior to the wedding the bottles should be removed. Each line has the guest's name followed by a colon and a phrase that describes how much time prior to the wedding the bottle should be removed from the refrigerator. The time has two components - an integer for the hours and an integer for the minutes. The guests who have unobtainable temperatures appear at the end of the list. Print their name followed by a colon and the phrase “ is unable to get the right temperature.” in the order they appear in the input.
+<h3>
 Sample Input
 </h3>
 <pre>
