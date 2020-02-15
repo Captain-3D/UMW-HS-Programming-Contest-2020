@@ -1,0 +1,51 @@
+50
+Turn south
+Walk 7 paces
+Turn east
+Walk 9 paces
+Turn north
+Walk 2 paces
+Turn south
+Walk 3 paces
+Turn west
+Walk 4 paces
+Turn east
+Turn west
+Walk 11 paces
+Turn south
+Walk 6 paces
+Turn west
+Walk 2 paces
+Turn north
+Walk 5 paces
+Walk 6 paces
+Turn west
+Walk 2 paces
+Turn east
+Walk 6 paces
+Turn south
+Walk 4 paces
+Turn east
+Walk 9 paces
+Turn north
+Walk 2 paces
+Turn south
+Walk 3 paces
+Turn west
+Walk 4 paces
+Turn east
+Turn west
+Walk 11 paces
+Turn north
+Walk 3 paces
+Turn south
+Walk 6 paces
+Turn west
+Walk 2 paces
+Turn north
+Walk 5 paces
+Walk 6 paces
+Turn west
+Walk 2 paces
+Turn east
+Walk 6 paces
