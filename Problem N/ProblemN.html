@@ -34,7 +34,7 @@ The next line is an integer, which is the temperature outside on the wedding day
 Output
 </h3>
 <p>
-The output is a sequence of lines, one line for each guest in the input. The output first shows guests whose temperature can be achieved. They are ordered by the amount of time prior to the wedding the bottles should be removed. Each line has the guest's name followed by a colon and a phrase that describes how much time prior to the wedding the bottle should be removed from the refrigerator. The time has two components - an integer for the hours and an integer for the minutes. The guests who have unobtainable temperatures appear at the end of the list. Print their name followed by a colon and the phrase “ is unable to get the right temperature.” in the order they appear in the input.
+The output is a sequence of lines, one line for each guest in the input. The output first shows guests whose temperature can be achieved. They are ordered by the amount of time prior to the wedding the bottles should be removed. Each line has the guest's name followed by a colon and a phrase that describes how much time prior to the wedding the bottle should be removed from the refrigerator. The time has two components - an integer for the hours and an integer for the minutes. When the hours are one, print the word hour. When the minutes are one, print the word minute. The guests who have unobtainable temperatures appear at the end of the list. Print their name followed by a colon and the phrase “ is unable to get the right temperature.” in the order they appear in the input.
 <h3>
 Sample Input
 </h3>
@@ -51,7 +51,7 @@ Gingersnap 80
 Sample Output
 </h3>
 <pre>
-Jaffy: remove bottle from fridge 1 hours and 0 minutes before the wedding.
+Jaffy: remove bottle from fridge 1 hour and 0 minutes before the wedding.
 Janny: remove bottle from fridge at the time of the wedding.
 Jeography: unable to get the right temperature.
 Gingersnap: unable to get the right temperature.
